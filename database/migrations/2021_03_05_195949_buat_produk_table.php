@@ -19,7 +19,7 @@ class BuatProdukTable extends Migration
             $table->string('nama_produk')->unique();
             $table->string('merk')->nullable();
             $table->integer('harga_beli');
-            $table->tinyInteger('diskon')->default(0);
+            $table->integer('diskon')->default(0);
             $table->integer('harga_jual');
             $table->integer('stok');
             $table->timestamps();
